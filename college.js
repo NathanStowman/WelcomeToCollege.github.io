@@ -253,6 +253,9 @@ function Time() {
             else if (this.hour == 12 && !this.am) {
                 this.am = true;
                 this.day++;
+                if (this.day == 28) {
+                    eventSystem.examEvent();
+                }
 
                 if (this.day % 7 == 1) {
                     this.increaseWeek();
