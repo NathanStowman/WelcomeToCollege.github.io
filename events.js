@@ -173,7 +173,7 @@ function Events(player) {
     //Sleep events
     this.sleepEvents = function() {
 
-        if (Math.floor((Math.random() * 1) + 1) == 1) {
+        if (Math.floor((Math.random() * 50) + 1) == 1) {
             var eventNum = Math.floor((Math.random() * 20) + 1);
 
             //set up the cases with all the text and stat modifiers
