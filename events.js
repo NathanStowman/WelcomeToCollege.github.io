@@ -172,7 +172,8 @@ function Events(player) {
     
     //Sleep events
     this.sleepEvents = function() {
-
+    
+        if(time.day != 28) {
         if (Math.floor((Math.random() * 50) + 1) == 1) {
             var eventNum = Math.floor((Math.random() * 20) + 1);
 
@@ -303,7 +304,7 @@ function Events(player) {
                     player.money.updateMoney();
                     break;
             }
-
+        }
         }
 
     }
