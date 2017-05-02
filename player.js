@@ -155,7 +155,7 @@ function Player(character) {
                 subject.exp = subject.exp - 100;
                 subject.lvl += 1;
                 chargeBar.setChargePercent(subject.exp);
-                text.text = subName + " " + subject.lvl;
+                subject.text.text = subName + " " + subject.lvl;
                 return subject;
             }
             //makes sure the character's level doesn't go ballistic.
