@@ -128,7 +128,7 @@ function Player(character) {
                 subject.lvl -= 1;
                 //subject.studied = false;
                 chargeBar.setChargePercent(subject.exp);
-                text.text = subName + " " + subject.lvl;
+                subject.text.text = subName + " " + subject.lvl;
                 return subject;
             }
 
